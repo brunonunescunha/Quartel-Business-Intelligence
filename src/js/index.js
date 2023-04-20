@@ -20,3 +20,5 @@ removeAtivoDoMenu.addEventListener("mouseenter", () => {
     const menuativo = document.querySelector(".menu-servicos")
     menuativo.classList.remove("ativo")
 })
+
+AOS.init();
