@@ -36,7 +36,7 @@
 
 .rodape .icones {
     display: flex;
-    font-size: 3rem;
+    
 }
 .rodape .icone:nth-last-child(2){
     margin: 0 50px;
@@ -47,6 +47,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 3rem;
     width: 50px;
     height: 50px;
     border: 2px solid var(--cor-padrao);
@@ -56,4 +57,34 @@
 .rodape .icones .icone a:hover{
     color: var(--cor-de-destaque-site);
     border: 2px solid var(--cor-de-destaque-site);
+}
+
+@media(max-width:1150px){
+    .rodape{
+        flex-direction: column;
+    }
+    .rodape .icones .icone a{
+        margin-bottom: 60px;
+    }
+    .rodape .info-empresa{
+        text-align: center;
+    }
+    .rodape .info-empresa .telefone{
+        margin-bottom: 60px;
+    }
+}
+
+@media(max-width:460px){
+    .rodape .icones .icone a{
+        font-size: 2.5rem;
+        width: 45px;
+        height: 45px;
+    }
+    .rodape .info-empresa{
+        font-size: 1.7rem;
+    }
+    .rodape .imagem{
+        width: 300px;
+    }
+    
 }
