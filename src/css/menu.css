@@ -1,7 +1,7 @@
 .header {
     position: fixed;
     width: 100vw;
-    background-color: #000000;
+    background-color: var(--cor-segundaria);
     z-index: 1;
 }
 
@@ -34,12 +34,12 @@
     margin: 5px;
     padding: 5px 20px;
     transition: 0.2s ease-in-out;
-    color: #ffffff;
+    color: var(--cor-padrao);
     position: relative;
 }
 
 .header .container nav ul li a:hover {
-    color: #FBC105;
+    color: var( --cor-de-destaque-site);
 }
 
 .header .container nav ul li a::before {
@@ -50,7 +50,7 @@
     left: 0;
     bottom: 0;
     width: 0;
-    background-color: #FBC105;
+    background-color: var(--cor-de-destaque-site);
     height: 2px;
 }
 .header .container nav ul li a:hover::before {
@@ -59,7 +59,7 @@
 }
 
 .header .container nav ul .menu.ativo a {
-    color: #FBC105;
+    color: var( --cor-de-destaque-site);
 }
 
 .header .container nav ul .menu.ativo a::before {
@@ -70,7 +70,7 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #FBC105;
+    background-color: var(--cor-de-destaque-site);
     height: 2px;
 }
 
@@ -109,7 +109,7 @@
 }
 
 .header .container nav ul .menu-servicos .servicos {
-    background-color: #000000;
+    background-color: var(--cor-segundaria);
     display: flex;
     top: 66px;
     flex-direction: column;
@@ -138,7 +138,7 @@
 }
 
 .header .container nav ul .menu-servicos.ativo .servicos a:hover {
-    color: #FBC105;
+    color: var( --cor-de-destaque-site);
 }
 
 /* ---------- Menu hamburguer -------------*/
@@ -156,7 +156,7 @@
 }
 
 .header .container .hamburguer {
-    background-color: #ffffff;
+    background-color: var(--cor-padrao);
     position: relative;
     display: block;
     width: 30px;
@@ -169,7 +169,7 @@
 .header .container .menu-hamburguer .hamburguer::before,
 .header .container .menu-hamburguer .hamburguer::after {
     content: '';
-    background-color: #ffffff;
+    background-color: var(--cor-padrao);
     display: block;
     width: 100%;
     height: 100%;
@@ -201,6 +201,25 @@
     transform: rotate(90deg);
     bottom: 0;
 }
+.header .container #whatsapp {
+    position: fixed;
+    color: var(--cor-padrao);
+    font-size: 4rem;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    padding: 15px;
+    background-color: #02e12e;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: .3s ease-in-out;
+    z-index: 2;
+}
+
+.header .container #whatsapp:hover {
+    color: #02e12e;
+    background-color: var(--cor-padrao);
+}
 
 @media(max-width: 1020px) {
 
@@ -218,7 +237,7 @@
         left: 0;
         bottom: 0;
         width: 100%;
-        background-color: #FBC105;
+        background-color: var(--cor-de-destaque-site);
         height: 2px;
     }
     .header .container nav ul .menu.menu-servicos.ativo .servicos {
@@ -249,7 +268,7 @@
     }
     .header .container nav ul {
         width: 200px;
-        background-color: #000000;
+        background-color: var(--cor-segundaria);
         padding: 20px;
         border-radius: 0 0 30px 30px;
     }

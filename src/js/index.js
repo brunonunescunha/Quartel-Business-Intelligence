@@ -14,7 +14,6 @@ menus.forEach((menu) =>{
 })
 
 const removeAtivoDoMenu = document.querySelector(".inicio") 
-console.log(removeAtivoDoMenu);
 removeAtivoDoMenu.addEventListener("mouseenter", () => {
 
     const menuativo = document.querySelector(".menu-servicos")
@@ -22,3 +21,14 @@ removeAtivoDoMenu.addEventListener("mouseenter", () => {
 })
 
 AOS.init();
+
+window.sr = ScrollReveal({reset: true})
+
+sr.reveal(".t1", {
+    rotate:{x:0, y:80, z:0},
+    duration: 2000
+})
+sr.reveal(".t2", {
+    rotate:{x:0, y:80, z:0},
+    duration: 3000
+})
